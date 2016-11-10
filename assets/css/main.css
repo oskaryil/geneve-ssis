@@ -18,6 +18,8 @@ a:hover {
   transition:.5s;
 }
 
+
+
 p {
   font-family: 'Didact Gothic', sans-serif !important;
 
@@ -25,6 +27,7 @@ p {
 
 ul{
   list-style: none !important;
+  padding-left: 0;
 }
 
 hr {
@@ -44,7 +47,8 @@ hr {
 }
 
 .tab-pane {
-  max-width: 800px !important;
+  max-width: 500px !important;
+  margin: 0 auto;
 }
 
 .about-section {
@@ -54,14 +58,14 @@ hr {
 }
 
 section {
-  padding-bottom:  25px;
-  padding-top:  25px;
+  padding-bottom:  40px;
+  padding-top:  40px;
 }
 
 .main-heading {
   font-size: 4em;
   font-family: 'Fjalla One', sans-serif;
-
+  color: #fff !important;
 }
 
 .schema-section {
@@ -74,7 +78,6 @@ section {
   max-width: 500px;
   font-size: 1.2em;
   font-family: 'Cantarell', sans-serif;
-
 }
 
 #comming-soon {
@@ -96,4 +99,71 @@ section {
   background-color: #ccc !important;
   height: 1px !important;
   width: 20% !important;
+}
+
+footer {
+  font-family: 'Cantarell', sans-serif !important;
+  font-weight: 700;
+  min-height: 150px;
+  height: auto;
+  max-height: 300px;
+  padding: 50px;
+  background-color: #222222;
+  color: #fff;
+}
+
+footer p {
+  letter-spacing: 0.75px;
+}
+
+.nav-tabs {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.parents-info-section {
+  background-color: #EEEEEE;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+.jumbotron {
+  background-image: url("../img/geneva.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.intro-section {
+}
+
+.main-intro-content {
+  text-shadow: 0.5px 0.5px 1px #333
+}
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: #222222;
+  margin-left: 24px;
+}
+
+.back-to-top:active, .back-to-top:visited {
+  color: #222222;
+}
+
+.back-to-top:focus {
+  color: #222222;
+}
+
+
+.back-to-top i {
+  font-size: 60px;
+  display:  none;
 }
