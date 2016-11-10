@@ -1,0 +1,93 @@
+body {
+    background-color: #EDEDED;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.huvudruta {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 870px;
+    height: auto;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 870px;
+    height: auto;
+    overflow: hidden;
+}
+.imgwrapper {
+    width: 648px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ruta {
+    background-color: white;
+    width: 200px;
+    float: left;
+}
+.ruta2 {
+    background-color: white;
+    width: 652px;
+    margin-left: 18px;
+    float: left;
+}
+.ruta3 {
+    background-color: white;
+    width: 870px;
+    margin-top: 15px;
+}
+h1 {
+    font-family: "Verdana";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h2 {
+    font-family: "Helvetica";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+h3 {
+    font-family: "Helvetica";
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.thumb {
+    float: left;
+    margin: 2px;
+}
+img {
+    height: 159px;
+}
+.video1 {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    padding-bottom: 10px;
+}
+.schema {
+    background-color: white;
+    width: 870px;
+    margin-top: 15px;
+}
+td, th {;
+    border: 1px solid #2ABC9D;
+    text-align: left;
+    background-color: AliceBlue;
+    width: 168px;
+    padding: 2px;
+}
