@@ -1,5 +1,13 @@
 
-.mini-title {
+.mini-header {
+  /* padding-bottom: 40px; */
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+p {
+  font-family: 'Didact Gothic', sans-serif !important;
+
 }
 
 ul{
@@ -7,12 +15,10 @@ ul{
 }
 
 hr {
-  color: black !important;
-  width: 20px !important;
-}
+  background-color: #ccc !important;
+  height: 1px !important;
+  width: 50%;
 
-#lol {
-  padding-top: 150px;
 }
 
 .bilder {
@@ -27,6 +33,7 @@ hr {
 .about-section {
   height: auto !important;
   padding-top:  40px;
+  padding-bottom: 40px;
 }
 
 section {
@@ -36,8 +43,40 @@ section {
 
 .main-heading {
   font-size: 4em;
+  font-family: 'Fjalla One', sans-serif;
+
 }
 
 .schema-section {
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.listwidth {
+  margin: auto !important;
+  max-width: 500px;
+  font-size: 1.2em;
+  font-family: 'Cantarell', sans-serif;
+
+}
+
+#comming-soon {
+  font-size: 10px;
+  padding-bottom: 40px;
+}
+
+.text-title {
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+.page-scroll {
+  font-family: 'Cantarell', sans-serif;
+
+}
+
+.hr-mini {
+  background-color: #ccc !important;
+  height: 1px !important;
+  width: 20% !important;
 }
