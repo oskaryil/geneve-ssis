@@ -17,7 +17,7 @@ hr {
 
 .bilder {
   padding-bottom: 150px;
-
+  background-color: #EEEEEE;
 }
 
 .tab-pane {
@@ -26,4 +26,18 @@ hr {
 
 .about-section {
   height: auto !important;
+  padding-top:  40px;
+}
+
+section {
+  padding-bottom:  25px;
+  padding-top:  25px;
+}
+
+.main-heading {
+  font-size: 4em;
+}
+
+.schema-section {
+  padding-top: 50px;
 }
