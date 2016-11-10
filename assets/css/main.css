@@ -23,3 +23,7 @@ hr {
 .tab-pane {
   max-width: 800px !important;
 }
+
+.about-section {
+  height: auto !important;
+}
