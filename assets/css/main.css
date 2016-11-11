@@ -7,7 +7,9 @@
 
 a:link, a:visited, a:active {
   text-decoration: none;
+  color: #ccc;
 }
+
 
 a:hover {
   color:green;
@@ -166,4 +168,29 @@ footer p {
 .back-to-top i {
   font-size: 60px;
   display:  none;
+}
+
+#weather {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.weather-day {
+  padding: 25px 25px 10px 25px;
+  background-color: #EEEEEE;
+  min-height: 50px;
+  height: auto;
+  font-size: 2em;
+}
+
+.weather-day:not(:last-of-type) {
+  border-right: 1px solid grey;
+}
+
+.weather-day p {
+  margin-top: 8px;
+}
+
+.weather-icon {
+  font-size: 1.5em;
 }
