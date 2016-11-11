@@ -32,6 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <div class="row temp-row">
-              <div class="col-md-12 weather-map">
+              <div class="col-md-12 col-sm-12 weather-map">
                 <div class="temp text-center"></div>
               </div>
             </div>
@@ -199,6 +201,13 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <div class="schema-info-box">
+                        <p class="text-center">Vi bor på ett vandrarhem i Geneve som heter <a href="https://genevahostel.ch/en/" target="_blanK">”Geneva Hostel”</a>. <strong>Frukost ingår alla dagar</strong> och vi får våra biljetter för lokala transportmedel via boendet. Frukosttiderna är <strong>06:30-09:00</strong>. De har <strong>gratis WiFi</strong>, men de säger ingenting om vilken bandbredd de erbjuder. <strong>Lakan ingår, men INTE handdukar.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <ul class="nav nav-tabs">
                       <li class="active"><a data-toggle="tab" href="#home">13/11 Resdag</a></li>
                       <li><a data-toggle="tab" href="#menu1">14/11 CERN</a></li>
@@ -207,41 +216,115 @@
                       <li><a data-toggle="tab" href="#menu4">17/11 Resdag</a></li>
                     </ul>
 
+
                     <div class="tab-content">
                       <div id="home" class="tab-pane fade in active">
                         <h3>Söndagen 13/11</h3>
                         <p>14:00 samling i avgångshallen terminal 5, Arlanda. Vi som skola checkar in alla ett dygn innan planet lyfter.</p>
                         <p>Flyg LX1251 ska lyfta 15:15 och landa 17:40 i Zurich. Där har vi fram till 20:45 innan flyg LX2816 lyfter 20:45 för att landa 21:35 i Geneve. <br><br> På flyget mellan Stockholm och Zurich serveras något mycket enklare tilltugg och på flyget inom Schweiz serveras ingenting. Mellan 17:40 samt c:a 19:40 har alla ansvar att äta motsvarande middag på Zurich flygplats.</p>
+
+
                       </div>
                       <div id="menu1" class="tab-pane fade">
                         <h3>Måndagen 14/11</h3>
                         <p>Samling i receptionen/utanför SENAST klockan xx:xx i respektive lokalrese-grupp för avresa mot CERN.</p>
-                        <p>08:30-08:45 Hitta till rätt hus och registrera alla grupper inför besöket 09:00-10:00 Introduction to CERN – presentation plus film</p>
                         <p>De två grupperna träffas vid CERNs reception för gemensam hemfärd. Vi får middag på boendet klockan 17:30.</p>
                         <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                        <ul class="schedule">
+                            <li class="listwidth text-center">
+                                08:30-08:45 Hitta till rätt hus och registrera alla grupper inför besöket
+                            </li>
+                            <li class="listwidth text-center">
+                                09:00-10:00 Introduction to CERN – presentation plus film
+                            </li>
+                            <hr class="mini-hr">
+                            <h3 class="listwidth text-center">
+                                <strong>Group 1 (45 persons large):</strong>
+                            </h3>
+                            <li class="listwidth text-center">
+                                10:00-10:10 Transportation to guided tour
+                            </li>
+                            <li class="listwidth text-center">
+                                10:10-11:10 Visit the super conducting magnet test facility
+                            </li>
+                            <li class="listwidth text-center">
+                                11:10-11:20 Transportation
+                            </li>
+                            <li class="listwidth text-center">
+                                11:20-12:10 Parallel visits to the CERN Control Centre and to AMS.
+                            </li>
+                            <li class="listwidth text-center">
+                                12:10-12:20 Transportation
+                            </li>
+                            <li class="listwidth text-center">
+                                12:20-13:00 Break/Free time for visiting our exhibitions
+                            </li>
+                            <li class="listwidth text-center">
+                                13:00-14:30 Lunch at the CERN cafeteria
+                            </li>
+                            <li class="listwidth text-center">
+                                14:00-14:45 Special: Möte med den svenske CERN-forskaren Jonas Strandberg
+                            </li>
+                            <li class="listwidth text-center">
+                                14:30-16:00 Free time for visiting our exhibitions
+                            </li>
+                            <hr class="hr-mini">
+                            <h3 class="listwidth text-center">
+                                <strong>Group 2 (26 persons large):</strong>
+                            </h3>
+
+                            <li class="listwidth text-center">10:00-11:30 Free time for visiting our permanent exhibitions</li>
+                            <li class="listwidth text-center">11:30  Lunch at the CERN cafeteria</li>
+                            <li class="listwidth text-center">13:00-13:45 Special: Möte med den svenske CERN-forskaren Jonas Strandberg</li>
+                            <li class="listwidth text-center">14:00-14:10 Transportation from CERN Reception b(Building 33)</li>
+                            <li class="listwidth text-center">14:10-15:00 Visit the CERN Control Centre</li>
+                            <li class="listwidth text-center">15:00-15:10 Transportation</li>
+                            <li class="listwidth text-center">15:10-16:10  Visit the super conducting magnet test facility</li>
+                            <li class="listwidth text-center">16:10-16:20 Transportation to CERN Reception</li>
+
+                            <li class="listwidth text-center"></li>
+                            <li class="listwidth text-center"></li>
+                            <li class="listwidth text-center"></li>
+
+                        </ul>
                       </div>
                       <div id="menu2" class="tab-pane fade">
                         <h3>Tisdagen 15/11</h3>
-                        <p>Samling i receptionen/utanför SENAST klockan xx:xx i respektive lokalrese-grupp för promenad till den svenska EU-delegationen 10-10:30 Träffar och samtalar med Jannie Lilja på den svenska EU-delegationen. X Förbered genom att surfa här. 10:30ish-11 Promenad till FN-palatset 11-11ish Säkerhetskontroller 11:30-12:30 Guidad tur i FN-palatset 12:45 Tillbaka till boendet 13:30 Lunch på boendet</p>
-                        <p>14:30 Samling vid receptionen för promenad till gamla stan 15:30-17:30ish Geneva Mystery xx:xx Middag (när och var meddelas senare)</p>
-                        <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                        <p>Samling i receptionen/utanför SENAST klockan xx:xx i respektive lokalrese-grupp för promenad till den svenska EU-delegationen.</p>
+
+                        <ul class="schedule">
+                            <li>10-10:30 Träffar och samtalar med Jannie Lilja på den svenska EU-delegationen. X</li>
+                            <li>Förbered genom att surfa här.</li>
+                            <li>10:30ish-11 Promenad till FN-palatset</li>
+                            <li>11-11ish Säkerhetskontroller</li>
+                            <li>11:30-12:30 Guidad tur i FN-palatset</li>
+                            <li>12:45 Tillbaka till boendet</li>
+                            <li>13:30 Lunch på boendet</li>
+
+                            <li>14:30 Samling vid receptionen för promenad till gamla stan</li>
+                            <li>15:30-17:30ish Geneva Mystery</li>
+                            <li>xx:xx Middag (när&amp;var meddelas senare)</li>
+                            <li>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</li>
+                        </ul>
                       </div>
                       <div id="menu3" class="tab-pane fade">
                         <h3>Onsdagen 16/11</h3>
-                        <p>Samling i receptionen/utanför SENAST klockan 08:50. Vi blir upphämtade av två turistbussar. 09:00-10:00 Guidad busstur runt i Geneve 10:00-11:00 Guidad vandring i Geneves gamla stan. xx:xx Lunch (när och var meddelas senare)</p>
-                        <p>xx:xx Klockmuseet Patek Phillip (frivilligt, tid meddelas senare)</p>
-                        <p>xx:xx Middag (när och var meddelas senare)</p>
-                        <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                        <p>Samling i receptionen/utanför SENAST klockan 08:50. Vi blir upphämtade av två turistbussar.</p>
+
+                        <ul class="schedule">
+                            <li>09:00-10:00 Guidad busstur runt i Geneve</li>
+                            <li>10:00-11:00 Guidad vandring i Geneves gamla stan.</li>
+                            <li>xx:xx Lunch (när&amp;var meddelas senare)</li>
+                            <li>xx:xx Klockmuseet Patek Phillip (frivilligt, tid meddelas senare)</li>
+                            <li>xx:xx Middag (när&amp;var meddelas senare)</li>
+                            <li>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</li>
+                        </ul>
                       </div>
                       <div id="menu4" class="tab-pane fade">
                         <h3>Torsdagen 17/11</h3>
-                        <p>Hemresedag. Frukostrumsnärvaro senast 08:30. Vi måste lämna boendet senast klockan 11. Mellan 09:30 och 10:30 inspekterar lärargruppen varje av oss använt boenderum.</p>
-                        <p>Delvis ”ledigt från arrangemang” men vi har en del att fixa med inför hemresan som vi som lärare/arrangörer kan bestämma först när vi sett hur allt ser ut. Planet hem lyfter 14:45. Så vi borde vara på flygplatsen strax före 13:30. Då ska alla ha ätit en rejälare lunch. Var och när vi gör det bestäms på måndag-tisdag under resveckan. För på resan hem blir det svårt att hinna äta. Flyg LX2811 ska lyfta 14:45 och landa 15:35 i Zurich. Där har vi BARA fram till 16:35 innan flyg LX1254 lyfter för att landa 18:55 på Arlanda. På flyget mellan Stockholm och Zurich serveras något mycket enklare tilltugg och på flyget inom Schweiz serveras ingenting. Så det kommer att bli sen middag torsdag kväll.</p>
-                      </div>
-                      <div id="menu5" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
-                      </div>
+                        <p>Hemresedag. <strong>Frukostrumsnärvaro senast 08:30.</strong> Vi måste <strong>lämna boendet senast klockan 11.</strong> Mellan <strong>09:30 och 10:30</strong> inspekterar lärargruppen varje av oss använt boenderum.</p>
+                        <p>Delvis ”ledigt från arrangemang” men vi har en del att fixa med inför hemresan som vi som lärare/arrangörer kan bestämma först när vi sett hur allt ser ut. <strong>Planet hem lyfter 14:45</strong>. Så vi borde <strong>vara på flygplatsen strax före 13:30.</strong> Då ska alla ha ätit en rejälare lunch. Var och när vi gör det bestäms på måndag-tisdag under resveckan. För på resan hem blir det svårt att hinna äta. <strong>Flyg LX2811 ska lyfta 14:45 och landa 15:35 i Zurich.</strong> Där har vi <strong>BARA fram till 16:35 innan flyg LX1254 lyfter för att landa 18:55 på Arlanda.</strong> På flyget mellan Stockholm och Zurich serveras något mycket enklare tilltugg och på flyget inom Schweiz serveras ingenting. Så det kommer att bli sen middag torsdag kväll.</p>
+                    </div>
                     </div>
                 </div>
             </div>
