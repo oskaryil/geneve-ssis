@@ -1,93 +1,196 @@
-body {
-    background-color: #EDEDED;
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.huvudruta {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 870px;
-    height: auto;
-}
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 870px;
-    height: auto;
-    overflow: hidden;
-}
-.imgwrapper {
-    width: 648px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-.ruta {
-    background-color: white;
-    width: 200px;
-    float: left;
-}
-.ruta2 {
-    background-color: white;
-    width: 652px;
-    margin-left: 18px;
-    float: left;
-}
-.ruta3 {
-    background-color: white;
-    width: 870px;
-    margin-top: 15px;
-}
-h1 {
-    font-family: "Verdana";
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-h2 {
-    font-family: "Helvetica";
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    font-weight: 300;
-}
-h3 {
-    font-family: "Helvetica";
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 20px;
-    font-weight: 650;
+
+.mini-header {
+  /* padding-bottom: 40px; */
+  font-family: 'Fjalla One', sans-serif;
+
 }
 
-.thumb {
-    float: left;
-    margin: 2px;
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #ccc;
 }
-img {
-    height: 159px;
+
+
+a:hover {
+  color:green;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
-.video1 {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    padding-bottom: 10px;
+
+
+
+p {
+  font-family: 'Didact Gothic', sans-serif !important;
+
 }
-.schema {
-    background-color: white;
-    width: 870px;
-    margin-top: 15px;
+
+ul{
+  list-style: none !important;
+  padding-left: 0;
 }
-td, th {;
-    border: 1px solid #2ABC9D;
-    text-align: left;
-    background-color: AliceBlue;
-    width: 168px;
-    padding: 2px;
+
+hr {
+  background-color: #ccc !important;
+  height: 1px !important;
+  width: 50%;
+
+}
+
+.under-line {
+  text-decoration: underline;;
+}
+
+.bilder {
+  padding-bottom: 150px;
+  background-color: #EEEEEE;
+}
+
+.tab-pane {
+  max-width: 500px !important;
+  margin: 0 auto;
+}
+
+.about-section {
+  height: auto !important;
+  padding-top:  40px;
+  padding-bottom: 40px;
+}
+
+section {
+  padding-bottom:  40px;
+  padding-top:  40px;
+}
+
+.main-heading {
+  font-size: 4em;
+  font-family: 'Fjalla One', sans-serif;
+  color: #fff !important;
+}
+
+.schema-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.listwidth {
+  margin: auto !important;
+  max-width: 500px;
+  font-size: 1.2em;
+  font-family: 'Cantarell', sans-serif;
+}
+
+#comming-soon {
+  font-size: 10px;
+  padding-bottom: 40px;
+}
+
+.text-title {
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+.page-scroll {
+  font-family: 'Cantarell', sans-serif;
+
+}
+
+.hr-mini {
+  background-color: #ccc !important;
+  height: 1px !important;
+  width: 20% !important;
+}
+
+footer {
+  font-family: 'Cantarell', sans-serif !important;
+  font-weight: 700;
+  min-height: 150px;
+  height: auto;
+  max-height: 300px;
+  padding: 50px;
+  background-color: #222222;
+  color: #fff;
+}
+
+footer p {
+  letter-spacing: 0.75px;
+}
+
+.nav-tabs {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.parents-info-section {
+  background-color: #EEEEEE;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+.jumbotron {
+  background-image: url("../img/Geneva.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.intro-section {
+}
+
+.main-intro-content {
+  text-shadow: 0.5px 0.5px 1px #333
+}
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  text-decoration: none;
+  color: #222222;
+  margin-left: 24px;
+}
+
+.back-to-top:active, .back-to-top:visited {
+  color: #222222;
+}
+
+.back-to-top:focus {
+  color: #222222;
+}
+
+
+.back-to-top i {
+  font-size: 60px;
+  display:  none;
+}
+
+#weather {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.weather-day {
+  padding: 25px 25px 10px 25px;
+  background-color: #EEEEEE;
+  min-height: 50px;
+  height: auto;
+  font-size: 2em;
+}
+
+.weather-day:not(:last-of-type) {
+  border-right: 1px solid grey;
+}
+
+.weather-day p {
+  margin-top: 8px;
+}
+
+.weather-icon {
+  font-size: 1.5em;
 }

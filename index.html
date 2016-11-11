@@ -78,18 +78,26 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="SSIS TE15 Skolresa till Geneve, Schweiz 2016.">
+    <meta name="author" content="Oskar Yildiz, Martin Nordström">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>SSIS TE15 Skolresa till Genéve, Schweiz</title>
+
+    <!-- Path to Lightbox CSS -->
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/template/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="assets/template/css/scrolling-nav.css" rel="stylesheet">
+    <!-- Link to Fjalla one and Cantarell -->
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/weather-icons.min.css">
+    <link href="assets/template/css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -105,7 +113,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -114,7 +122,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">TE15 i Geneve</a>
+                <a class="navbar-brand page-scroll text-title" href="#page-top">TE15 i Geneve</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -125,15 +133,32 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#page-top">Hem</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#weather">Väder</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#about">Innan vi åker</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schema">Schema under resan</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Bilder</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bra-att-veta-under-resan">Bra att veta under resan</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#parents-info">Föräldrainformation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schema">FAQ</a>
                     </li>
                 </ul>
+                <div class="nav navbar-nav pull-right">
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -146,13 +171,31 @@
 =======
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
+      <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                <div class="col-md-12">
+                    <div class="main-intro-content">
+                      <h1 class="page-header main-heading">TE15 Resa till <a href="https://www.geneve.com/" target="_blank">Genéve</a>, Schweiz</h1>
+                      <a class="btn btn-primary page-scroll btn-lg" href="#about">Klicka för att skrolla ner!</a>
+                    </div>
                 </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="weather" class="weather-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center page-heading mini-header">Vädret under resan</h1>
+                </div>
+            </div>
+            <div class="row temp-row">
+              <div class="col-md-12 weather-map">
+                <div class="temp text-center"></div>
+              </div>
             </div>
         </div>
     </section>
@@ -161,37 +204,299 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
+                <div class="col-md-12">
+                    <h1 class="mini-header">Innan vi åker</h1>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mini-header">Kontrollera någon dag innan</h3>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="list">
+                  <ul>
+                    <li class="listwidth text-center">Att du kan ta emot och skicka sms i Schweiz.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth text-center">Att du har tillgång till motsvarande ungefär 900 SEK, men allt behöver inte vara inväxlat till Schweiziska Franc.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Om du vet med dig att du har svårt att sova när det är nya ljud runtomkring dig, så som till exempel andra sovande personer, så köp och ta med <strong>öronproppar</strong>.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Kontrollera måtten på din resväska. Tänk på att den inte får vara större än (55 x 40 x 23) cm. Man får även ta med en liten väska, typ mindre ryggsäck eller handväska utöver sitt handbagage.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- APPS HERE -->
+                </div>
+              </div>
+            <hr class="hr">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mini-header">Avresedagen hemma</h3>
+                <div class="list">
+                  <ul>
+                    <li class="listwidth">Ta med pass/nationella Idkort/permanenta uppehållstillståndskortet. </li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Ta med biljetten. Vi som skola kommer att ha checkat in er innan ni kommer till Arlanda. Vi gör det för att få så många platser bredvid varandra som möjligt.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Ta med sjukförsäkringskortet från Försäkringskassan.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Var noga med att inte packa mer än 100 ml vätska totalt (handbagage-regel).</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Alla ska ha representativa kläder inför besöken på <strong>CERN</strong> och <strong>EU/FN</strong> (hela jeans, helst skjorta men tröja fungerar också för alla killar.)</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Lakan ingår, men du måste ta med egen handduk.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Sköna, gärna varma skor. Det är förbjudet att ha högklackat eller tofflor med öppen tå på <strong>CERN</strong>, pga säkerhetsrisk.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Just nu är det kallt även i centraleuropa. Res helst i en varm jacka.</li>
+                      <hr class="hr-mini">
+                    <li class="listwidth">Ta med paraply. Det kan regna och vi går på en stadsvandring oavsett väder.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Schema Section -->
+    <section id="schema" class="schema-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center page-heading mini-header">Schema för resan</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="tab" href="#home">13/11 Resdag</a></li>
+                      <li><a data-toggle="tab" href="#menu1">14/11 CERN</a></li>
+                      <li><a data-toggle="tab" href="#menu2">15/11 EU+FN</a></li>
+                      <li><a data-toggle="tab" href="#menu3">16/11 Geneve</a></li>
+                      <li><a data-toggle="tab" href="#menu4">17/11 Resdag</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                      <div id="home" class="tab-pane fade in active">
+                        <h3>Söndagen 13/11</h3>
+                        <p>14:00 samling i avgångshallen terminal 5, Arlanda. Vi som skola checkar in alla ett dygn innan planet lyfter.</p>
+                        <p>Flyg LX1251 ska lyfta 15:15 och landa 17:40 i Zurich. Där har vi fram till 20:45 innan flyg LX2816 lyfter 20:45 för att landa 21:35 i Geneve. <br><br> På flyget mellan Stockholm och Zurich serveras något mycket enklare tilltugg och på flyget inom Schweiz serveras ingenting. Mellan 17:40 samt c:a 19:40 har alla ansvar att äta motsvarande middag på Zurich flygplats.</p>
+                      </div>
+                      <div id="menu1" class="tab-pane fade">
+                        <h3>Måndagen 14/11</h3>
+                        <p>Samling i receptionen/utanför SENAST klockan xx:xx i respektive lokalrese-grupp för avresa mot CERN.</p>
+                        <p>08:30-08:45 Hitta till rätt hus och registrera alla grupper inför besöket 09:00-10:00 Introduction to CERN – presentation plus film</p>
+                        <p>De två grupperna träffas vid CERNs reception för gemensam hemfärd. Vi får middag på boendet klockan 17:30.</p>
+                        <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                      </div>
+                      <div id="menu2" class="tab-pane fade">
+                        <h3>Tisdagen 15/11</h3>
+                        <p>Samling i receptionen/utanför SENAST klockan xx:xx i respektive lokalrese-grupp för promenad till den svenska EU-delegationen 10-10:30 Träffar och samtalar med Jannie Lilja på den svenska EU-delegationen. X Förbered genom att surfa här. 10:30ish-11 Promenad till FN-palatset 11-11ish Säkerhetskontroller 11:30-12:30 Guidad tur i FN-palatset 12:45 Tillbaka till boendet 13:30 Lunch på boendet</p>
+                        <p>14:30 Samling vid receptionen för promenad till gamla stan 15:30-17:30ish Geneva Mystery xx:xx Middag (när och var meddelas senare)</p>
+                        <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                      </div>
+                      <div id="menu3" class="tab-pane fade">
+                        <h3>Onsdagen 16/11</h3>
+                        <p>Samling i receptionen/utanför SENAST klockan 08:50. Vi blir upphämtade av två turistbussar. 09:00-10:00 Guidad busstur runt i Geneve 10:00-11:00 Guidad vandring i Geneves gamla stan. xx:xx Lunch (när och var meddelas senare)</p>
+                        <p>xx:xx Klockmuseet Patek Phillip (frivilligt, tid meddelas senare)</p>
+                        <p>xx:xx Middag (när och var meddelas senare)</p>
+                        <p>”Ledigt från arrangemang” fram till 22:00, när man SENAST ska vara tillbaka vid boendet.</p>
+                      </div>
+                      <div id="menu4" class="tab-pane fade">
+                        <h3>Torsdagen 17/11</h3>
+                        <p>Hemresedag. Frukostrumsnärvaro senast 08:30. Vi måste lämna boendet senast klockan 11. Mellan 09:30 och 10:30 inspekterar lärargruppen varje av oss använt boenderum.</p>
+                        <p>Delvis ”ledigt från arrangemang” men vi har en del att fixa med inför hemresan som vi som lärare/arrangörer kan bestämma först när vi sett hur allt ser ut. Planet hem lyfter 14:45. Så vi borde vara på flygplatsen strax före 13:30. Då ska alla ha ätit en rejälare lunch. Var och när vi gör det bestäms på måndag-tisdag under resveckan. För på resan hem blir det svårt att hinna äta. Flyg LX2811 ska lyfta 14:45 och landa 15:35 i Zurich. Där har vi BARA fram till 16:35 innan flyg LX1254 lyfter för att landa 18:55 på Arlanda. På flyget mellan Stockholm och Zurich serveras något mycket enklare tilltugg och på flyget inom Schweiz serveras ingenting. Så det kommer att bli sen middag torsdag kväll.</p>
+                      </div>
+                      <div id="menu5" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Some content in menu 2.</p>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!--<section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <h1>Contact Section</h1>
                 </div>
             </div>
         </div>
+    </section>-->
+
+    <!-- SECTION FOR PICTURES -->
+    <section id="services" class="service-section bilder">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center mini-header">Bilder</h1>
+                </div>
+                <div class="col-md-12">
+                    <p id="comming-soon" class="text-center">(Bilder kommer!)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                  <a href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" data-lightbox="slideshow">
+                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" data-lightbox="slideshow">
+                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                <a href="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" data-lightbox="slideshow">
+                    <img class="img-responsive" data-lightbox="roadtrip" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="">
+                </a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!--GOOD TO KNOW BEFORE THE TRIP -->
+    <section id="bra-att-veta-under-resan" class="bra-att-veta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center mini-header">Bra att veta under resan</h1>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="mini-header text-center">Förbandsmaterial</h3>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="list">
+                  <ul>
+                    <li class="listwidth text-center">Det finns två förbandsväskor med på resan. Cia har (oftast) den ena och Ingrid har (oftast) den andra.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <br>
+                <h3 class="mini-header text-center">Regler under resan</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="list">
+                  <ul>
+                    <hr>
+                  <li class="listwidth text-center">Det är en studieresa. Det innebär att samma värdegrund och samma regler gäller under
+                  resan som under skoltid.</li>
+                    <hr class="hr-mini">
+                  <li class="listwidth text-center"><strong class="under-line">ALLA</strong> ska vara nere till frukost. Rummets gruppbefäl har ansvaret att få upp och ut alla ur
+                  rummet och ner till frukost.</li>
+                    <hr class="hr-mini">
+                  <li class="listwidth text-center"><strong class="under-line">ALLA</strong> ska vara hemma till klockan 22:00. Senast 23:00 ska det vara tyst på rummet, eftersom
+                  vi har ett digert schema. Om man inte är inne på boendet mellan 22:00 samt frukost kan det
+                  bli knepigt med skolans försäkringsbolag vid till exempel personskada. Därför är det mycket
+                  klokt att respektera den här regeln av fler än en orsak.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <br>
+                <h3 class="mini-header text-center">Alkohol</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="list">
+                  <ul>
+                    <hr>
+                  <li class="listwidth text-center">Ingen konsumtion av öl, vin eller sprit är tillåtet under resan. Detta oavsett de regler som finns i Schweiz. Det gäller att man som elev har koll på att följande händer om man blir ertappad med att dricka eller att ha druckit:</li>
+                    <br>
+                  <li class="listwidth text-center">- Man riskerar att skickas hem på sina vårdnadshavares bekostnad.</li>
+                    <br>
+                  <li class="listwidth text-center">- Vid användning av droger blir man hemskickad med <strong>OMEDELBAR</strong> verkan.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <!-- SECTION FOR PARENTS -->
+    <section id="parents-info" class="parents-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center mini-header">Föräldrainformation</h1>
+                    <hr>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center listwidth">Följ gärna resan via denna hemsida via de bilder som läggs upp.</p>
+                  <hr class="hr-mini">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center listwidth">Var trygg i vetskapen att om det händer det minsta lilla, så kontaktar vi er. Vill ni ändå höra er för, maila i första hand till <a href="mailto:ingrid@stockholmscience.se">ingrid@stockholmscience.se</a>. Hon läser och svarar på mail i samband med frukost samt under tidiga kvällar.</p>
+                  <hr class="hr-mini">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center listwidth">Om det händer något i er familj som gör att ni vill få tag på ert barn så fort som möjligt kan vara bra om vi som medföljande lärare hinner hjälpa ert barn att kunna ta samtalet vid sidan om, istället för till exempel inför hela gruppen. Har det hänt något hemma, så förvarna Ingrid på <a href="tel:+46729292829">+46 729 29 28 29</a>, så att vi hinner underlätta situationen för ert barn under och efter ert samtal.</p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <section id="bra-att-veta-under-resan" class="bra-att-veta-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center mini-header">FAQ</h1>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="mini-header text-center">Vilka kostnader kommer resan att innebära?</h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-inverse">
+      <div class="container">
+        <p class="footer-text text-center">Made with &hearts; by <a href="https://oskaryildiz.me" target="_blank">Oskar Yildiz</a> & <a href="http://martinnord.me" target="_blank">Martin Nordström</a></p>
+        <p class="footer-text text-center">&copy; Copyright Stockholm Science & Innovation School 2016</p>
+      </div>
+    </footer>
+    <a href="#page-top" class="back-to-top page-scroll" style="display: inline;" data-toggle="tooltip" title="Gå till toppen">
+      <i class="fa fa-arrow-circle-up"></i>
+    </a>
     <!-- jQuery -->
     <script src="assets/template/js/jquery.js"></script>
+    <script src="assets/js/lightbox.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/template/js/bootstrap.min.js"></script>
@@ -199,6 +504,8 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="assets/template/js/jquery.easing.min.js"></script>
     <script src="assets/template/js/scrolling-nav.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/main.js"></script>
 
 >>>>>>> master
 </body>
