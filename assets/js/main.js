@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 	// http://api.openweathermap.org/data/2.5/forecast/daily?q=Geneva&mode=json&units=metric&cnt=7&appid=931c6d7de465d9508cd249f5eb74b3ae
 
-	var api = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Geneva&mode=json&units=metric&cnt=7&appid=931c6d7de465d9508cd249f5eb74b3ae';
+	var api = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Geneva,CH&mode=json&units=metric&cnt=7&appid=931c6d7de465d9508cd249f5eb74b3ae';
 	$.getJSON(api, function(response){
 		console.log(response);
 		console.log(response.list);
@@ -50,13 +50,10 @@ $(document).ready(function() {
 					currentDayInt = weekDay+2;
 					break;
 				case 3:
-					if(weekDay + 3 > 7) {
-
-					}
 					currentDayInt = weekDay+3;
 					break;
 				case 4:
-					currentDayInt = weekday+4;
+					currentDayInt = weekDay+4;
 					break;
 				case 5:
 					currentDayInt = weekDay+5;
@@ -66,10 +63,35 @@ $(document).ready(function() {
 					break;
 			}
 
+			if(currentDayInt > 7) {
+				currentDayInt -= 7;
+			}
 
+			switch(currentDayInt) {
+				case 1:
+					currentDayString = "Måndag";
+					break;
+				case 2:
+					currentDayString = "Tisdag";
+					break;
+				case 3:
+					currentDayString = "Onsdag";
+					break;
+				case 4:
+					currentDayString = "Torsdag";
+					break;
+				case 5:
+					currentDayString = "Fredag";
+					break;
+				case 6:
+					currentDayString = "Lördag";
+					break;
+				case 7:
+					currentDayString = "Söndag";
+					break;
+			}
 
-
-			$(".temp").append("<div class='weather-day' style='display:inline-block;'>"+"<p class='weather-dayname'>"+"</p>"+"<i class='weather-icon wi wi-owm-"+day.weather[0].id+"'></i>"+"<p class='temperature'>"+day.temp.day+" &deg;C</p>"+"</div>");
+			$(".temp").append("<div class='weather-day' style='display:inline-block;'>"+"<p class='weather-dayname'>"+currentDayString+"</p>"+"<i class='weather-icon wi wi-owm-"+day.weather[0].id+"'></i>"+"<p class='temperature'>"+day.temp.day+" &deg;C</p>"+"</div>");
 		});
 
 

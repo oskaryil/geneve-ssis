@@ -1,3 +1,10 @@
+body {
+  color: #222222;
+  width:  100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .mini-header {
   /* padding-bottom: 40px; */
@@ -7,9 +14,7 @@
 
 a:link, a:visited, a:active {
   text-decoration: none;
-  color: #ccc;
 }
-
 
 a:hover {
   color:green;
@@ -19,8 +24,6 @@ a:hover {
   -webkit-transition:.5s;
   transition:.5s;
 }
-
-
 
 p {
   font-family: 'Didact Gothic', sans-serif !important;
@@ -180,11 +183,16 @@ footer p {
   background-color: #EEEEEE;
   min-height: 50px;
   height: auto;
-  font-size: 2em;
+  font-size: 1.2em;
+  width: 100px;
+  -webkit-box-shadow: -13px 14px 48px 0px rgba(176,176,176,1);
+  -moz-box-shadow: -13px 14px 48px 0px rgba(176,176,176,1);
+  box-shadow: -13px 14px 48px 0px rgba(176,176,176,1);
 }
 
-.weather-day:not(:last-of-type) {
-  border-right: 1px solid grey;
+.weather-day:not(:first-of-type) {
+  margin-left: 30px;
+
 }
 
 .weather-day p {
@@ -193,4 +201,27 @@ footer p {
 
 .weather-icon {
   font-size: 1.5em;
+}
+
+.main-intro-content a {
+  color: #ccc;
+}
+
+.main-intro-content > .btn {
+  color: #fff;
+}
+
+.schema-info-box {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+}
+
+.schedule {
+
+}
+
+.schedule li {
+  padding-top: 10px;
+  font-size: 1em;
 }
